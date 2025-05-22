@@ -1,2 +1,35 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+//Login
+function handleLogin(event) {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const result = login(email, password);
+  alert(result);
+  return result;
+}
+function login(email, password) {
+  if (email == "k@gmail.com" && password == "12345") {
+    return "Login successful! Welcome.";
+  } else {
+    return "Invalid input. Please try again.";
+  }
+}
+//Sum
+function sum(a, b) {
+  const result = a + b;
+  alert("Sum is: " + result);
+  return result;
+}
+//Subtract
+function subtract(a, b) {
+  const result = a - b;
+  alert("Sub is: " + result);
+  return result;
+}
+//Greet
+function greet() {
+  const message = "Hello! This is the greet function.";
+  alert(message);
+  return message;
+}
+greet();
